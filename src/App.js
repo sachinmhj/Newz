@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Items from './components/Items';
+import Navbr from './components/Navbr';
+import Details from './components/Details';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <Navbr/>
+      <Routes>
+        {/* for categories */}
+        <Route path='/' element={<Items pgsize={10} catg="world"/>}/>
+        <Route path='/business' element={<Items pgsize={10} catg="business"/>}/>
+        <Route path='/entertainment' element={<Items pgsize={10} catg="entertainment"/>}/>
+        <Route path='/food' element={<Items pgsize={10} catg="food"/>}/>
+        <Route path='/health' element={<Items pgsize={10} catg="health"/>}/>
+        <Route path='/science' element={<Items pgsize={10} catg="science"/>}/>
+        <Route path='/sports' element={<Items pgsize={10} catg="sports"/>}/>
+        <Route path='/technology' element={<Items pgsize={10} catg="technology"/>}/>
+        {/* for categories */}
+        <Route path='/details' element={<Details/>}/>
+      </Routes>
+    </Router>
+    </>
   );
 }
 

@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: #6c757d;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
