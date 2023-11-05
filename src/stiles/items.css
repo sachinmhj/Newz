@@ -1,0 +1,5 @@
+span.translate-middle.badge.rounded-pill{
+    position: relative;
+    left: 50%;
+    top: 2px;
+}

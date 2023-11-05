@@ -1,0 +1,29 @@
+#navbarNavDropdown{
+    justify-content: center;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary{
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.collapse.navbar-collapse{
+    border: 1px solid wheat;
+    border-radius: 5px;
+    background-color: white;
+}
+a.nav-link:hover{
+    color: aqua;
+}
+a.navbar-brand{
+    border: 2px solid;
+    border-radius: 50%;
+    color: white;
+}
+a.nav-link{
+    color: black;
+}
+#navbarDropdown{
+    color: black;
+}
+#navbarDropdown:hover{
+    color: aqua;
+}
