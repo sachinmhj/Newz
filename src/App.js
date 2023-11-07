@@ -1,7 +1,6 @@
 import './App.css';
 import Items from './components/Items';
 import Navbr from './components/Navbr';
-import Details from './components/Details';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
       <Navbr/>
       <Routes>
         {/* for categories */}
-        <Route path='/' element={<Items pgsize={10} catg="world"/>}/>
+        <Route path='/' element={<Items pgsize={10} catg="general"/>}/>
         <Route path='/business' element={<Items pgsize={10} catg="business"/>}/>
         <Route path='/entertainment' element={<Items pgsize={10} catg="entertainment"/>}/>
         <Route path='/food' element={<Items pgsize={10} catg="food"/>}/>
@@ -19,7 +18,6 @@ function App() {
         <Route path='/sports' element={<Items pgsize={10} catg="sports"/>}/>
         <Route path='/technology' element={<Items pgsize={10} catg="technology"/>}/>
         {/* for categories */}
-        <Route path='/details' element={<Details/>}/>
       </Routes>
     </Router>
     </>
