@@ -1,5 +1,6 @@
 #navbarNavDropdown{
     justify-content: center;
+    background-color: black;
 }
 .navbar.navbar-expand-lg.bg-body-tertiary{
     border: 2px solid white;
@@ -19,10 +20,11 @@ a.navbar-brand{
     color: white;
 }
 a.nav-link{
-    color: black;
+    color: white;
+    background-color: black;
 }
 #navbarDropdown{
-    color: black;
+    color: white;
 }
 #navbarDropdown:hover{
     color: aqua;

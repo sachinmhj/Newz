@@ -16,7 +16,7 @@ export default function Navbr() {
                             <Link className="nav-link" aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">About</Link>
+                            <Link className="nav-link" to="/about">About</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -25,7 +25,6 @@ export default function Navbr() {
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><Link className="dropdown-item" to="/business">business</Link></li>
                                 <li><Link className="dropdown-item" to="/entertainment">entertainment</Link></li>
-                                <li><Link className="dropdown-item" to="/food">food</Link></li>
                                 <li><Link className="dropdown-item" to="/health">health</Link></li>
                                 <li><Link className="dropdown-item" to="/science">science</Link></li>
                                 <li><Link className="dropdown-item" to="/sports">sports</Link></li>

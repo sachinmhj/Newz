@@ -1,5 +1,6 @@
 import './App.css';
 import Items from './components/Items';
+import About from './components/About';
 import Navbr from './components/Navbr';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 function App() {
@@ -10,9 +11,9 @@ function App() {
       <Routes>
         {/* for categories */}
         <Route path='/' element={<Items pgsize={10} catg="general"/>}/>
+        <Route path='/about' element={<About/>}/>
         <Route path='/business' element={<Items pgsize={10} catg="business"/>}/>
         <Route path='/entertainment' element={<Items pgsize={10} catg="entertainment"/>}/>
-        <Route path='/food' element={<Items pgsize={10} catg="food"/>}/>
         <Route path='/health' element={<Items pgsize={10} catg="health"/>}/>
         <Route path='/science' element={<Items pgsize={10} catg="science"/>}/>
         <Route path='/sports' element={<Items pgsize={10} catg="sports"/>}/>
