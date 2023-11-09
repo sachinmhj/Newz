@@ -7,15 +7,17 @@ export default function Items(props) {
 
   function nextbtn(){
     setPag(pag+1)
+    console.log(pag)
   }
-
+  
   function prevbtn(){
     setPag(pag-1)
+    console.log(pag)
   }
 
   const [deta, setDeta] = useState([])
   const [lod, setLod] = useState(false)
-  const [pag, setPag] = useState(null)
+  const [pag, setPag] = useState(1)
 
   useEffect(() => {
     setLod(true)
@@ -27,7 +29,7 @@ export default function Items(props) {
       setLod(false)
     })
   }, [props.pgsize, props.catg, pag])
-  console.log(deta)
+  // console.log(deta)
   return (
     <div>
       {lod ? <Loader /> : ""}
